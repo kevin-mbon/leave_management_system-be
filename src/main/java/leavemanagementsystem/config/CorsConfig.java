@@ -13,10 +13,9 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/**")
-//                .allowedOrigins("https://leave-management-systen-fe.vercel.app")
+                .allowedOrigins("https://leave-management-system-fe-gqm1.vercel.app")
                 .allowedOrigins("http://localhost:5173")
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-//                .allowedHeaders("Content-Type", "Authorization")
                 .allowedHeaders("*")
                 .allowCredentials(true);
     }
